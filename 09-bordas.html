@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bordas</title>
     <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
       #login {
         width: 200px;
         height: 200px;
@@ -12,14 +16,22 @@
         margin: 50px auto;
         text-align: center;
         padding: 5px;
-        border-radius: 15px;
+        border-radius: 10px;
       }
       #login img {
-        height: 40px;
-        border-radius: 25%;
+        height: 30px;
+        border-radius: 50%;
       }
       #login h3 {
         color: white;
+      }
+      #btn-login {
+        margin-top: 20px;
+        background-color: rgb(168, 216, 200);
+        height: 30px;
+        width: 50px;
+        border-radius: 15px;
+        color: rgb(82, 83, 79);
       }
     </style>
   </head>
@@ -27,6 +39,11 @@
     <div id="login">
       <img src="img/shiba.jpg" alt="Cachorro shiba" />
       <h3>Efetue o login</h3>
+      <label for="nome">Nome</label>
+      <input id="nome" type="text" />
+      <label for="senha">Senha</label>
+      <input placeholder="******" id="senha" type="password" />
+      <input id="btn-login" type="submit" value="Login" />
     </div>
     <a href="./"><img src="img/voltar.png" alt="voltar" width="50px" /></a>
   </body>
